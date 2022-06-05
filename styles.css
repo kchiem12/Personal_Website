@@ -23,6 +23,8 @@ body {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
+    padding: 20px;
+    font-family: 'Muli';
 }
 
 .directory li {
@@ -34,6 +36,7 @@ body {
     font-weight: bolder;
     font-size: large;
     color: #05386b;
+    font-family: 'Muli';
 }
 
 
