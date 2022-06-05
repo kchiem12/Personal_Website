@@ -1,6 +1,46 @@
+/*
+color scheme:
+
+for links: #05386b
+background: #5cdb95
+texts: #edf5e1
+darker shade of green (to highlight a box): #379683
+lighter shade of green: #8ee4af
+*/
+
+
+body {
+    background-color: #5cdb95;
+}
+
+.header {
+    display: block;
+}
+
+.directory {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.directory li {
+    display: inline;
+}
+
+.directory a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+    color: #05386b;
+}
+
+
 #name {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #edf5e1;
 }
 
 .home-page {
@@ -12,10 +52,16 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 300px;
     height: auto;
 }
 
+
+
+
+
+
+/* for the about page */
 #about_me_img {
     display: block;
     margin-left: auto;
