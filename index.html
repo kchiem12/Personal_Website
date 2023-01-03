@@ -16,25 +16,213 @@
 
 <body>
 
-    <div class="header">
+    <a name="top"></a>
 
-        <h1 id="name">Kenneth Chiem</h1>
+    <nav class="navbar" id="navbar">
 
-        <ul class="directory">
-            <li><a class="links" href=".pages/about.html">About</a></li>
-            <li><a>Readings</a></li>
-            <li><a class="links" href=".pages/shows.html">Shows</a></li>
+        <div>
+            [Insert Logo]
+        </div>
+
+        <!-- sr-only is a class that allows only screen readers to see it -->
+        <div class="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span> 
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="buttons mobile-buttons" id="navigation-buttons">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="">Resume</a></li>
         </ul>
+    </nav>
+
+
+    <div class="introduction" id="introduction">
+        <div class="intro-text">
+            <h1>Hi, I'm Ken.</h1>
+            <p>I am a second year student at Cornell University studying computer science.
+                I am interested in software development and bringing cool ideas to life.
+            </p>
+        </div>
+
+        <div class="profile-image">
+            [Insert Profile Image]
+        </div>
     </div>
 
-    <div class="home-page">
-        <p>Hello and welcome! I am a current student at Cornell University majoring in computer science and minoring
-            in business. Here is a little <a class="links" href="./pages/about.html">about</a> me page.</p>
+    <div class="spacer white-to-blue"></div>
 
-        <p>
-            <img id="home_page_img" src="./img/home_page.JPG">
+    <div class="about" id="about">
+        <h1 class="about-header">About</h1>
+
+        <p>I am a second year student at <span style="color: red;">Cornell University</span> studying <span style="color: rgb(107, 107, 255);">Computer Science</span>
+            and potentially double majoring in <span style="color: rgb(107, 107, 255);">Operations Research and Engineering</span>. Some areas of computer science I'm interested in
+            includes software development, front-end and machine learning.
+        </br>
+        </br>
+        Besides being a student and developing projects, I...
         </p>
-        
+
+        <ul>
+            <li class="running-point">enjoy <span style="color: #FCA311">running and lifting</span>. I love exploring running trails, and recently I've gotten into lifting at the gym with friends</li>
+            <li class="shows-point">watch <span style="color: #FCA311">shows</span>. I love action and thrillers of all kind, and will post a list of favorites soon!</li>
+            <li class="maps-point">love <span style="color: #FCA311">geography and maps</span>. I think it's cool how interconnected this world is, and sometimes I get lost studying maps of towns and intricacies of roads.</li>
+            <li class="minesweeper-point">play <span style="color: #FCA311">Minesweeper</span>. I see many people put Tetris as their go-to game, but for me Minesweeper is THE browser game. You can catch me playing in the library.</li>
+        </ul>
+
+        <p>You can contact me at my email <a href="mailto:kchiem12@gmail.com" style="text-decoration: none; color: #FCA311;">kchiem12@gmail.com</a>. Below are links to my LinkedIn and GitHub.</p>
+        <div class="resume-links" style="display:flex; justify-content: center; gap: 20px;">
+            <a href="https://github.com/kchiem12"><img src="./assets/github-icon.svg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/kenneth-chiem-131412224/"><img src="./assets/linkedin-white-icon.svg" alt="LinkedIn"></a>
+        </div>
     </div>
+
+    <div class="spacer blue-to-white"></div>
+
+    <div class="portfolio" id="portfolio">
+        <h1 class="portfolio-header">Portfolio</h1>
+
+        <div class="project-dropdowns">
+            <div class="contents">
+                <div class="dropdown-label">
+                    <h1>SideQuest</h1>
+                    <p>App to find gigs; won best overall in AppDev HackChallenge</p>
+                    <div class="tools-used">
+                        <img src="/assets/swift-icon.svg" alt="Swift">
+                    </div>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-content-body">
+                        <p>In the span of two weeks, I, along with a group of four others, this app, where users can log in and post
+                            gigs, and search for gigs to do. I mainly did the front-end, using Swift and XCode. <br>
+                            <br>
+                            I used Alamofire to connect the backend in order to save user info and gigs.
+                        </p>
+                        <a href="https://github.com/kchiem12/sidequest1"><img src="./assets/github-black-icon.svg" alt="Github"></a>
+                        <div class="image-table">
+                            <div class="image-container-phone previews">
+                                <img src="./assets/login-screen-sidequest.png" alt="sidequest-login">
+                            </div>
+                            <div class="image-container-phone previews">
+                                <img src="./assets/profile-pic-sidequest.png" alt="sidequest_profile_screen">
+                            </div>
+                            <div class="image-container-phone previews">
+                                <video autoplay loop muted playsinline controls>
+                                    <source src="/assets/trimmed-better-recording-sidequest-2-2-2.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                  </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="dropdown-label">
+                   <h1>Workout Tracker</h1>
+                   <p>
+                       A web-based application to track your workouts
+                   </p>
+                   <div class="tools-used">
+                        <img src="/assets/react-icon.svg" alt="React">
+                        <img src="/assets/firebase-api-icon.svg" alt="Firebase">
+                   </div>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-content-body">
+                        <p>Created in August 2022, the application is made with react and Firebase is used as BaaS.
+                            It authenticates the user, and maintains a calendar of the users activity/workouts. Currently transitioning
+                            the backend to MongoDB using NodeJS and Express.
+                        </p>
+                        <a href="https://github.com/kchiem12/workout_app"><img src="./assets/github-black-icon.svg" alt="Gtihub"></a>
+                        <div class="image-table">
+                            <div class="image-container previews">
+                                <img src="./assets/workout_login-min.png" alt="workout-login">
+                            </div>
+                            <div class="image-container previews">
+                                <img src="./assets/workout_adding-min.png" alt="workout-adding">
+                            </div>
+                            <div class="image-container previews">
+                                <img src="./assets/workout_1-min.png" alt="workout-added">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="dropdown-label">
+                    <h1>Railroad Damage Detection</h1>
+                    <p>Detects defective railroads with machine learning</p>
+                    <div class="tools-used">
+                        <img src="./assets/python-icon.svg" alt="Python">
+                    </div>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-content-body">
+                        <p>
+                            Created in August 2022. I used PyTorch in order to create a model that detects a defective railroad given an image.
+                            Through training the model, it resulted in an accuracy of 94.33% on the training set, and 77.27% on the test set.
+                        </p>
+                        <a href="https://github.com/kchiem12/neural_net"><img src="./assets/github-black-icon.svg" alt="Gtihub"></a>
+                        <div class="image-table">
+                            <div class="image-container previews">
+                                <img src="./assets/rail_detection-min.png" alt="railroad_detection_result">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="dropdown-label">
+                    <h1>VWC Nails Website</h1>
+                    <p>Webpage for a nail salon in Philadelphia</p>
+                    <div class="tools-used">
+                        <img src="./assets/html-icon.svg" alt="HTML5">
+                        <img src="./assets/css-icon.svg" alt="CSS3">
+                        <img src="./assets/js-icon.svg" alt="JavaScript">
+                    </div>
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-content-body">
+                        <p>
+                            Created static, responsive website for VWC Nails in Philadelphia.
+                            If you ever find yourself in Philadelphia, do check it out!
+                        </p>
+                        <a href="https://vwcnails.com"><img src="./assets/vwc.svg" style="width: 48px; height: 48px;" alt="VWC"></a>
+                        <div class="image-table">
+                            <div class="image-container previews">
+                                <img src="./assets/vwcnails_homepage.png" alt="vwcnails_homepage">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-vids modals">
+            <video class="full-video" id="fullvideo" autoplay loop muted playsinline>
+                <source src="/assets/cropped-sidequest-video.mov" type="video/quicktime" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="modal-imgs modals">
+            <img src="" alt="" class="full-img full-media" />
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <p>
+            Made with <img src="./assets/heart.svg" alt="heart-icon" class="heart" /> by Kenneth Chiem &copy; 2022
+        </p>
+    </div>
+
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

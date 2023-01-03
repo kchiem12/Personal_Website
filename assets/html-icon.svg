@@ -1,0 +1,16 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Type=Default, showSymbol=True, showText=False">
+<g id="symbol">
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M6.66424 43.2018L2.8125 0H45.1365L41.2806 43.195L23.9486 48L6.66424 43.2018Z" fill="#E44D26"/>
+<path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M23.9744 44.3273L37.9795 40.4445L41.2746 3.53241H23.9744V44.3273Z" fill="#F16529"/>
+<g id="Union">
+<path d="M16.9631 19.5553H23.9744V24.8537H12.1173L10.6882 8.83093H23.9744V14.1295H16.4788L16.9631 19.5553Z" fill="#EBEBEB"/>
+<path d="M23.9512 33.3223L23.9744 33.3161V38.8288L23.95 38.8355L13.0964 35.8225L12.3541 27.5031H17.673L18.0502 31.7289L23.9512 33.3223Z" fill="#EBEBEB"/>
+</g>
+<g id="Union_2">
+<path d="M23.9561 8.83093H37.2289L36.7545 14.1295H23.9561V8.83093Z" fill="white"/>
+<path d="M23.9561 24.8537V19.5553H36.2724L36.1431 20.9781L34.8183 35.8225L23.9561 38.833V33.3205L29.8656 31.7255L30.4806 24.8537H23.9561Z" fill="white"/>
+</g>
+</g>
+</g>
+</svg>
