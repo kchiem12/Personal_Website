@@ -341,6 +341,138 @@ html, body {
     width: 10px;
 }
 
+.experience {
+    padding-top: 10px;
+    background-color: var(--navy-blue);
+    padding-bottom: 100px;
+}
+
+.experience-header {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--yellow);
+    font-size: 50px;
+
+}
+
+.experience-title {
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.slideshow-buttons {
+    position: relative;
+    gap: 40px;
+}
+
+.experience-slideshow-present {
+    position: relative;
+    width: max(50vw, 200px);
+    height: 400px;
+    color: #e5e5e5;
+}
+
+.experience-img-container {
+    display: block;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.experience-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.slideshow-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    /* background-color: #5f7782; */
+}
+
+.experience-descriptions {
+    margin: 0;
+    list-style-type: square;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.img-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.skills-used {
+    /* position: absolute; */
+    bottom: 20px;
+    margin: 0;
+    padding-top: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.experience-descriptions li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.experience-slideshow-present::before, .experience-slideshow-present::after {
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    content: "";
+}
+
+.experience-slideshow-present::before {
+    left: 0;
+    top: 0;
+    border-left: 3px solid var(--gray-wave);
+    border-top: 3px solid var(--gray-wave);
+}
+
+.experience-slideshow-present::after {
+    right: 0;
+    bottom: 0;
+    border-right: 3px solid var(--gray-wave);
+    border-bottom: 3px solid var(--gray-wave);
+}
+
+.yellow-bar {
+    position: absolute;
+    z-index: 10;
+    width: 2px;
+    height: 110px;
+    left: 0;
+    background: var(--yellow);
+    display: block;
+    transition: left .2s ease;
+    -webkit-transition: left .2s ease;
+    transition: top 0.4s ease-out;
+}
+
+.gray-bar {
+    position: absolute;
+    z-index: 9;
+    width: 2px;
+    height: 100%;
+    background: #8f8f8f;
+    display: block;
+    transition: left .2s ease;
+    -webkit-transition: left .2s ease;
+}
+
 .footer {
     font-family: 'Quicksand', sans-serif;
     height: 7vh;
@@ -355,6 +487,18 @@ html, body {
 
     .about {
         padding-bottom: 50px;
+    }
+
+    .experience-title {
+        font-size: 18px;
+    }
+
+    .skills-used {
+        font-size: 15px;
+    }
+
+    .experience-descriptions {
+        font-size: 16px;
     }
 }
 
@@ -376,9 +520,9 @@ html, body {
         font-size: 18px;
     }
 
-    .about {
+    /* .about {
         padding-bottom: 30vh;
-    }
+    } */
 
     .navbar {
         padding-right: 20px;
@@ -503,10 +647,73 @@ html, body {
         font-size: 15px;
     }
 
+    .slideshow-container {
+        flex-direction: column;
+    }
+
+    .slideshow-buttons {
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    .img-block {
+        flex-direction: row;
+        padding-left: 0;
+    }
+
+    .experience-img-container {
+        width: 70px;
+        height: 80px;
+    }
+
+    .gray-bar {
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .yellow-bar {
+        height: 2px;
+        width: 70px;
+        bottom: 0;
+        transition: left 0.4s ease-out;
+    }
+
+    .experience-slideshow-present {
+        width: 97%;
+        height: 300px;
+    }
+
+    .experience-title {
+        font-size: 20px;
+    }
+
+    .experience-descriptions {
+        font-size: 15px;
+    }
+
+    .skills-used {
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width: 405px) {
     .about {
-        padding-bottom: 60vh;
+        padding-bottom: 20vh;
+    }
+
+    .experience-header {
+        font-size: 40px;
+    }
+
+    .experience-slideshow-present {
+        height: 400px;
+    }
+}
+
+@media (max-width: 300px) {
+    .experience {
+        padding-top: 300px;
     }
 }

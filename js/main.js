@@ -49,7 +49,7 @@ previewVideo.forEach(preview => {
         modalVideos.classList.add('open');
         const video = preview.firstElementChild.getAttribute('src');
 
-        fullVideo.firstElementChild.setAttribute('src', "." + video);
+        fullVideo.firstElementChild.setAttribute('src', video);
         fullVideo.load();
     });
 });
@@ -115,3 +115,40 @@ window.addEventListener('scroll', () => {
     }
     lastScroll = window.scrollY;
 })
+
+
+/* For displaying experience slideshow */
+var currIndex = 0;
+
+// Called whenever the screen is resized
+window.onresize = () => {
+    showSlide(currIndex);
+};
+
+showSlide(0);
+
+function showSlide(n) {
+
+    console.log(`function called ${n}`);
+
+    currIndex = n;
+    let slides = document.getElementsByClassName("slides");
+    let images = document.getElementsByClassName("experience-img");
+    let yellowBar = document.querySelector(".yellow-bar");
+    for (var i = 0; i < slides.length; i++) {
+        if (i === n) {
+            slides[i].style.display = "block";
+            images[i].style.filter = "";
+            if (window.matchMedia("(max-width: 533px)").matches) {
+                yellowBar.setAttribute('style', "left: " + n * 90 + "px;");
+            } else {
+                yellowBar.setAttribute('style', "top: " + n * 120 + "px;");
+            }
+        } else {
+            slides[i].style.display = "none";
+            images[i].style.filter = "grayscale(100%)";
+        }
+    }
+}
+
+
