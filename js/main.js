@@ -6,6 +6,9 @@ const dropdownHeaders = document.querySelectorAll('.dropdown-label');
 //     })
 // }
 
+window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'), {});
+
+
 dropdownHeaders.forEach(header => {
     header.addEventListener('click', e => {
         header.classList.toggle('active');
@@ -129,8 +132,6 @@ showSlide(0);
 
 function showSlide(n) {
 
-    console.log(`function called ${n}`);
-
     currIndex = n;
     let slides = document.getElementsByClassName("slides");
     let images = document.getElementsByClassName("experience-img");
@@ -140,7 +141,7 @@ function showSlide(n) {
             slides[i].style.display = "block";
             images[i].style.filter = "";
             if (window.matchMedia("(max-width: 533px)").matches) {
-                yellowBar.setAttribute('style', "left: " + n * 90 + "px;");
+                yellowBar.setAttribute('style', "left: " + n * 106 + "px;");
             } else {
                 yellowBar.setAttribute('style', "top: " + n * 120 + "px;");
             }
@@ -150,5 +151,7 @@ function showSlide(n) {
         }
     }
 }
+
+
 
 
