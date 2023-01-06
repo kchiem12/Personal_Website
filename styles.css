@@ -166,7 +166,8 @@ html, body {
 
 .introduction {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
     flex-direction: row;
     height: 60vh;
 }
@@ -188,7 +189,7 @@ html, body {
 
 .intro-text p {
     color: #5f7782;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .introduction p {
@@ -622,6 +623,10 @@ html, body {
 
     .experience-descriptions {
         font-size: 16px;
+    }
+    
+    .intro-text p {
+        font-size: 20px;
     }
 }
 
